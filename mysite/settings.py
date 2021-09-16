@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-$(^^8st%9yzmm8ou#zr8-#kw1jqx#t&*w5c&-utt0xz*#@()yh
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["*"]  # サーバー起動時に"GET / HTTP/1.1" 400のようなものエラーが出たら左記のようにする。
 
 
 # Application definition
@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'sslserver',
 ]
 
 MIDDLEWARE = [
