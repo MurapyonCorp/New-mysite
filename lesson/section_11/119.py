@@ -23,8 +23,9 @@ with open('New-mysite/lesson/section_11/config.yml', 'w') as yaml_file:
     }
   }, yaml_file, default_flow_style = False)
   
+
 with open('New-mysite/lesson/section_11/config.yml', 'r') as yaml_file:
-  data = yaml.load(yaml_file)
+  data = yaml.load(yaml_file, Loader = yaml.FullLoader)
   print(data, type(data))
   print(data['web_server']['host'])
   print(data['web_server']['port'])
