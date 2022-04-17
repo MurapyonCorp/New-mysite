@@ -5,13 +5,9 @@ import smtplib
 smtp_host = 'smtp.live.com'
 smtp_port = 587
 from_email = 'xxxx@hotmail.com'
-from_email = 'ryoooo3286stormedge@outlook.jp'
 to_email = 'xxxx@hotmail.com'
-to_email = 'ryoooo3286stormedge@outlook.jp'
 username = 'xxxx@hotmail.com'
-username = 'Murashige Ryo'
 password = 'klghjvabuweriyvbwi'
-password = 'Angelburn35404678'
 
 msg = message.EmailMessage()
 msg.set_content('Test  email')
